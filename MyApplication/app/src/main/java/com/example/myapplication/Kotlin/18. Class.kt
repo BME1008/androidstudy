@@ -49,6 +49,11 @@ import android.speech.tts.TextToSpeech
         println("RunableCar2에 접근해서 engine 출력 하면 : ${runableCar2.engine}")
         println("RunableCar2에 접근해서 body 출력 하면 : ${runableCar2.body}")
 
+        val testClass = TestClass()
+        testClass.test(1)
+        testClass.test(1,2)
+
+
     }
 
     // 클래스(설명서) 만드는 방법(1)
@@ -129,7 +134,9 @@ import android.speech.tts.TextToSpeech
         }
 
         init{
-            // 인스턴스화 될때 이부분이 제일 먼저 출력됨
+            // 인스턴스화 될때(객체가 만들어 질때) 이부분이 제일 먼저 출력됨
+            // 초기셋팅을 할 때 유용하다
+            println("\nRunableCar2가 만들어 졌습니다.")
         }
 
         fun ride(){
@@ -146,6 +153,29 @@ import android.speech.tts.TextToSpeech
 
     }
 
+    // 오버로딩
+    // 함수의 이름이 동일할때 처리
+    // 이름이 같기만 받는 파라미터가 다른 함수
+    class TestClass(){
+
+        // 이름이 같은 변수가 존재할수없다.
+        //val a: Int = 10
+        //val a: Int = 10
+
+        /*
+            이름이 같은 함수(기능)이 존재할수없다.
+            fun test(){ }
+            fun test(){ }  두개 같이 사용 불가
+        */
+
+        // 이름이 같아도 함수가 받는 인자(파라메터)가 다르면 사용이 가능함 (오버로딩)
+        fun test(a: Int){
+            println( "\n UP")
+        }
+        fun test(a: Int, b: Int){
+            println("\n DOWN")
+        }
+    }
 
 
 

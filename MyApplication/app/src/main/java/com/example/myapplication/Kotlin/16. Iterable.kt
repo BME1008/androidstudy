@@ -121,5 +121,4 @@ fun main(array: Array<String>){
         d++     // While문의 조건을 벗어나게해서 빠겨 나가게하는 역할
     } while (d < e)
 
-
 }

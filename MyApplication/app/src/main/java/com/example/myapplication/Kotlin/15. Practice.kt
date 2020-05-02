@@ -48,9 +48,4 @@ fun main(array: Array<String>){
     c.clear()   // c에 있는걸 모두 지워버림
     println("clear 후 : " + c)
 
-
-
-
-
-
 }

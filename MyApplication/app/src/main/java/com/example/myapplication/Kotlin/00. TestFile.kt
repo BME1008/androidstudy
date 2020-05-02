@@ -2,14 +2,15 @@ package com.example.myapplication.Kotlin
 
 fun main(args:Array<String>){
     test1()
-    //test2()
+    test2()
 }
 
 fun test1(){
 
     // 강의를 보다가 MutableList 랑 mutableListOf 차이가  궁금해짐 차이가 뭘까?
 
-    var list = MutableList(3,{0})
+    var list = MutableList(3,{0})   // 하나의 값으로 세개 초기화 방법
+    //var list = MutableList(3,{999;999;999})   // 원하는 값 세개로 초기화 방법
     var list2 = mutableListOf<Int>()
     var list3 = mutableListOf<Int>(97,98,99)
 
@@ -53,7 +54,25 @@ fun test1(){
 
 }
 
+
+// MutableList를 mutableListOf로 만들어 질까???
 fun test2(){
+    /*
+        var list1 = MutableList(9, {0})
+
+        for(i in 0..8){
+            list1[i] = i+1
+        }
+
+        var list2 = MutableList(9,{"ture"})
+
+        list1.forEachIndexed{index, value->
+            if(value % 2 ==0){
+                list2[index]="true"
+            }else{
+                list2[index]="false"
+            }
+    */
 
     val list1 = mutableListOf<Int>()
     val list2 = mutableListOf<Boolean>()
@@ -61,9 +80,9 @@ fun test2(){
     for(i in 0..8) {
         list1.add(i+1)
     }
-
-
+    println()
     println(list1)
+
 
     list1.forEach{item: Int ->
 
