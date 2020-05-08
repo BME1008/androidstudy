@@ -1,33 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 부모 -->
 <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <!--
-        android:orientation의 속성에서
-            @ vertical    컴포넌트들을 수직으로 정렬
+        - Layout 은 부모역할
+            @ 화면 구성 역할만 하며 화면에는 노출이 안되는 특성이있음
+
+        - 자식 역할을 하는 컴포넌트들은 화면에 노출이 되고, 단독으로 배치는 불가능
+
+        - android:orientation= "" 의 속성에서
+            @ vertical      컴포넌트들을 수직으로 정렬
             @ horizontal  컴포넌트들을 수평으로 정렬
+
+        - android:gravity= "" 속성을 주면 부모 안에 모든 자식들의 정렬 지정
      -->
+
+<!-- 자식 -->
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#8BC34A"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:textSize="50dp"
+        android:text="안녕하세요." />
+
+    <!--
+        - android:layout_width="" 가로  android:layout_height=""세로
+             @wrap_content   디바이스의 넓이 만큼 영역을 다 사용
+             @match_parent   컨텐츠의 내용 만큼만 넓이를 사용
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요."
+        android:layout_gravity="left"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp" />
+
+        <!--
+            - android:layout_gravity="" 는 LinearLayout 이 부모뷰로 있어서 사용할 수 있는 속성
+                @ 옵션을 줘서 뷰 안에서 자식마다 단독으로 위치를 정렬할 수 있다.
+        -->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="안녕하세요."
         android:textSize="30dp"
-        android:textColor="@color/colorAccent"
-        />
+        android:textColor="@color/colorAccent"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="안녕히계세요.">
-    </TextView>
-
-
-    </LinearLayout>
+</LinearLayout>
 
 

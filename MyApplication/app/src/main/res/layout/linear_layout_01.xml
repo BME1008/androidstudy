@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--부모-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="가운데"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity=""
+        android:gravity="right|center"
+        android:text="Gravity" />
+    <!--
+        android:gravity= "" 200dp 200dp 안에 영역에서 텍스트(내용물)이 정렬됨 속성 두개는 | 로 붙임
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="20dp"
+            android:background="#ff0103"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="20dp"
+            android:background="#FFC107"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="20dp"
+            android:background="#2196F3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="20dp"
+            android:background="#E91E63"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="200"
+            android:textSize="20dp"
+            android:background="#673AB7"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="300"
+            android:textSize="20dp"
+            android:background="#009688"/>
+        <!--
+            android:layout_weight="" 속성을 사용하면
+            예를 들어 android:layout_weight="1"
+            각 컴포넌트들이 1 대 1 대 1 의 비율로 영역을 나눠가짐
+            Tip!! width를 1 대 1 대 1 비율로 나누고 싶으면 android:layout_width="0dp" 을 준다
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:weightSum="5"
+        android:orientation="vertical">
+        <!--
+            android:weightSum="" 속성을 주면 주어진 영역이 속성 만큼 영역이 나누어짐
+            자식에서 android:layout_weight="" 속성을 준만큼만 영역이 채워지고 나머지는 비어있다.
+            (부모)android:weightSum=""5   (자식)android:layout_weight="1"  주면 4칸은 비어있는거
+        -->
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="1000"
+            android:textSize="20dp"
+            android:background="#2196F3"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="2000"
+            android:textSize="20dp"
+            android:background="#00BCD4"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="3000"
+            android:textSize="20dp"
+            android:background="#CDDC39"/>
+        <!--
+            android:layout_weight="" 속성을 사용하면 각 컴포넌트들이 주어진 영역에서 비율로 나눠진다
+            예를 들어 android:layout_weight="1"
+            각 컴포넌트들이 1 대 1 대 1 의 비율로 영역을 나눠가짐
+            Tip!!  height 1 대 1 대 1 비율로 나누고 싶으면 android:layout_height="0dp" 을 준다
+        -->
+    </LinearLayout>
+
+</LinearLayout>
