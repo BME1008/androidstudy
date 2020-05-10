@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+        이미지 경로를 쓸때는 @로 시작함
+        이미지 폴더는 drawable 에 넣어서 사용함
+        android drawable importer 에 하나의 사이즈인 이미지를 주면 알아서 해상도를 만들어냄
+          ==>>> drawable 우클릭 > New > Batch Drawable Import
+    -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"/>
+
+    <!--
+        android:scaleType="" 을 사용하면 정해진 1:1 비율의 레이아웃에 맞게 비율 조절 가능
+    -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#3F51B5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dog"/>
+
+</LinearLayout>

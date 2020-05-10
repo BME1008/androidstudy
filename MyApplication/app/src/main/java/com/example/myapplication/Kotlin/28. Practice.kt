@@ -41,6 +41,7 @@ class Student__ : Person__{
     // fun ear(){ } 로 기능까지 구현했으면 인터페이스한 클래스에서 별도로 기능 구현 필요없음
 
     override fun study() {
+        var aaa = 222
         println("공부한다.")
     }
 }

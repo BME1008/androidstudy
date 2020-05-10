@@ -4,3 +4,12 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 </resources>
+
+<!--
+    컬러 코드를 별도의 변수명으로 지정해서 사용이 가능
+    #008577 색상이 필요하면 colorPrimary 이름을 사용하면됨
+    [EX]
+    layout.xml 에서 사용할때
+    android:background="#008577" 을 android:background="@color/colorPrimary"
+      ==>> @color/colorPrimary 은 경로를 의미함 color.xml 파일의 name이 colorPrimary 을 의미
+-->

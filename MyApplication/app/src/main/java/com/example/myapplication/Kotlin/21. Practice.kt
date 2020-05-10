@@ -60,7 +60,6 @@ class TV(val channels: List<String>){
         }
 
     get(){      // 누군가에 의해서 변수가 불려서 사용될때는 get() 호출
-        println("호출되었습니다.")
         return field
     }
 

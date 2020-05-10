@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid
+            android:color="#6D8FFF"/>
+
+    <corners
+            android:bottomLeftRadius="30dp"
+            android:topRightRadius="30dp"
+            />
+    <!--
+        android:radius="30dp"   를 하면 네퀴퉁이 모두가 둥그렇게 깍인다
+    -->
+</shape>

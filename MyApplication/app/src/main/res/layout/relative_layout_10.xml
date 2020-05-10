@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:text="Hello"
+        android:textSize="30dp"
+        android:background="#FF0000"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="Hello"
+        android:textSize="30dp"
+        android:background="#CDDC39"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Hello"
+        android:textSize="30dp"
+        android:background="#4CAF50"/>
+
+<!--
+    RelativeLayout 안에서는 자식들이 순차적으로 쌓아져서 겹친다.
+    먼저 적은게 아래로 깔리는 구조이다.
+    겹쳐야할 일이 있으면 FrameLayout 을 사용해라
+    RelativeLayout 은 로딩시 연산이 더 걸리는 현상이있다.
+    이유는 기준 뷰를 가지고 배치를 하게되면 좌표들이 계산이 되어야해서 그럼
+    그러나 요즘은 스마트폰이 좋아져서 체감상 느끼지는 못 함
+-->
+</RelativeLayout>

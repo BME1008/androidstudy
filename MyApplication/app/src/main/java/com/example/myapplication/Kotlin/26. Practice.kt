@@ -30,7 +30,8 @@ open class Charator(var hp: Int, val power:Int){
     open fun defense(damage: Int) {
         hp -= damage
 
-        if (hp > 0) println("${javaClass.simpleName}의 남은 체력 $hp")   // ${javaClass.simpleName}은 클래스의 이름이 나온다
+        if (hp > 0) println("${javaClass.simpleName}의 남은 체력 $hp")
+        // ${javaClass.simpleName}은 클래스의 이름이 나온다
         else println("사망 했습니다. ")
     }
 }

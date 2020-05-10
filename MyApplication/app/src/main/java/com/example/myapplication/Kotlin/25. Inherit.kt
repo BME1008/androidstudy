@@ -22,7 +22,8 @@ fun main(args: Array<String>){
 }
 
 /*
-        class Car100(engine: String, body: String) 이라고 적지만 앞에 private class Car100(engine: String, body: String) 이렇게 작성되어있는거다
+        class Car100(engine: String, body: String) 이라고 적지만 앞에
+        private class Car100(engine: String, body: String) 이렇게 작성되어있는거다
         private > open class Car100(engine: String, body: String)로 바꿔주면 상속이 가능해짐
 */
 open class Car100(){
@@ -41,7 +42,11 @@ class SuperCar100(): Car100(){  /* 상속은 : Class명() 이런식으로 작성
         CTRL + O 눌러서 상속받은 메서드를 가져올수 있다. (직접 작성해도 문제 없음)
     */
     override fun drive(): String {  /* override > 덮어쓰다. */
-        // super.drive()   /*  CTRL + 좌클릭 하면 부모의 dieve로 감 즉!!! super.drive() 하면 부모의 dirve()를 사용하겠다는거 */
+        /*
+            super.drive()
+            CTRL + 좌클릭 하면 부모의 dieve로 감 즉!!! super.drive() 하면 부모의 dirve()를 사용하겠다는거
+        */
+
         var run = super.drive()
         return "빨리 $run."
 

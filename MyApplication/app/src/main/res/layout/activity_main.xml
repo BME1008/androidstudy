@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 부모 -->
-<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="right"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -21,18 +22,18 @@
         - android:gravity= "" 속성을 주면 부모 안에 모든 자식들의 정렬 지정
      -->
 
-<!-- 자식 -->
+    <!-- 자식 -->
     <ImageView
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:background="#8BC34A"/>
+        android:background="#8BC34A" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffff00"
-        android:textSize="50dp"
-        android:text="안녕하세요." />
+        android:text="안녕하세요0."
+        android:textSize="50dp" />
 
     <!--
         - android:layout_width="" 가로  android:layout_height=""세로
@@ -43,12 +44,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="안녕하세요."
         android:layout_gravity="left"
+        android:text="안녕하세요1."
         android:textColor="@color/colorAccent"
         android:textSize="30dp" />
 
-        <!--
+    <!--
             - android:layout_gravity="" 는 LinearLayout 이 부모뷰로 있어서 사용할 수 있는 속성
                 @ 옵션을 줘서 뷰 안에서 자식마다 단독으로 위치를 정렬할 수 있다.
         -->
@@ -56,9 +57,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="안녕하세요."
-        android:textSize="30dp"
-        android:textColor="@color/colorAccent"/>
+        android:text="안녕하세요2."
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp" />
 
 </LinearLayout>
 

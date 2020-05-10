@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!--
+        android:angle="" 로 그라데이션을 돌릴수있음
+        그라데이션은 이미지 파일 대신 직접 만들어서 사용해야지 자연스럽게 출력됨
+    -->
+    <gradient
+        android:angle="180"
+        android:centerColor="#E4C8C8"
+        android:endColor="#D87D9C"
+        android:startColor="#C9D7E3"/>
+
+
+
+</shape>

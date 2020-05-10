@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+        ScrollView는 자식을 하나만 가질수있음
+        android:scrollbars="none" 을 추가하면 화면이 넘어가도 스크롤이 안생김
+        android:fillViewport="true"  화면이 틀러질 경우를 방지하기 위해서 넣어줌
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="#FF0000"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="#673AB7"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#2196F3"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="#CDDC39"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="#FFC107"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#2196F3"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
