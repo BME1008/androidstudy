@@ -1,0 +1,27 @@
+
+01. Activity
+    - 앱의 한 화면이다.
+    - Life Cycle (수명 주기) : https://developer.android.com/guide/components/activities/activity-lifecycle
+
+    Activity launched
+            ▼
+        onCreate()
+                - 비정상적으로 Activity가 종료되어서 다시 실행하지 않는 이상 최초로 한 번 실행되면 이곳으로 돌아오지는 않음
+                - Activity를 만들때 단 한번만 하면 되는 작업들을 여기서 수행
+            ▼
+        onStart()
+            ▼
+        onResume()
+                - 앱으로 다시 돌아올때 무조건 호출 됨
+                - Activity가 다시 호출될 때 하면 되는 작업들을 여기서 수행
+            ▼
+    Activity running
+        onPause()
+                - 우리가 만든 앱의 Activity(화면)이 일부분이 안보일때
+                >   onResume() 으로 돌아갈수있다.                            >  두개다 돌아가면 onResume()을 걸친다.
+            ▼
+        onStop()
+                - 우리가 만든 앱이 아예 안보일때 (홈 버튼을 눌러서 홈으로 돌아갈때 처럼)
+                >   onRestart() 로 돌아가서 onStart()로 돌아갈수있음   >    두개다 돌아가면 onResume()을 걸친다.
+            ▼
+        onDestroy()
