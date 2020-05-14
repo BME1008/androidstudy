@@ -46,7 +46,7 @@ class OpenInternet : AppCompatActivity() {
                 Log.d("edit", "onTextChanged :: " + s)
             }
 
-        })// addTextChangedListener
+        })  // addTextChangedListener
 
     }   // onCreate
 }   // OpenInternet

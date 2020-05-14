@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView00"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="25dp"
+        android:text="안뇽? 난 Fragment_SelfOne이야"
+        android:gravity="center"
+        android:background="#CDDC39"/>
+
+</LinearLayout>

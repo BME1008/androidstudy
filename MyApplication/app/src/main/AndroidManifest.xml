@@ -11,15 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".OpenInternet">
+        <activity android:name=".FragmentSelfStudyTwo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FragmentSelfStudyFirst" />
+        <activity android:name=".FragementActivity" />
+        <activity android:name=".OpenInternet" />
         <activity android:name=".Intent2" />
-        <activity android:name=".Intent1"/>
+        <activity android:name=".Intent1" />
         <activity android:name=".Calculat" />
         <activity android:name=".Linstener" />
         <activity android:name=".MainActivity" />
