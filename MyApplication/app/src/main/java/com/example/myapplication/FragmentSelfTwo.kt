@@ -13,6 +13,7 @@ class FragmentSelfTwo: Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // Layout 을 inflater 통해서 메모리에 로딩함
         return inflater.inflate(R.layout.fragment_self_two, container,false)
     }
 }

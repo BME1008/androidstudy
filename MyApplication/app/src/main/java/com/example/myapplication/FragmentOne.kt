@@ -48,7 +48,7 @@ class FragmentOne: Fragment() {
 
     }
 
-    // Activity 에서는 onCreate() 부분에 메인 로직을 작성했다면
+    // Activity 에서는 onCreate() 부분에 로직을 작성했다면
     // Fragment 에서는 onViewCreated() 부분에 메인 로직을 작성
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         Log.d("life_cycle[2]","onViewCreated")

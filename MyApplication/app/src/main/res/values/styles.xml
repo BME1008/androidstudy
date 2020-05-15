@@ -1,11 +1,21 @@
 <resources>
-
+<!--
+    AndroidManifest.xml 파일에 있는 android:theme="@style/AppTheme" 에 사용됨
+-->
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorYellow</item>colorSkyBlue
+        <item name="colorPrimaryDark">@color/colorSkyBlue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>  <!--앱 이름이 나오는걸 안나오게 할수있음-->
     </style>
 
 </resources>

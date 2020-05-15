@@ -4,10 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/pass"
-        android:layout_width="100dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:text="전달"/>
+        android:text="fragment_self_two"
+        android:textSize="35dp"
+        android:background="#2196F3"/>
 
 </LinearLayout>

@@ -10,7 +10,6 @@ class FragmentSelfStudyTwo : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragment_self_study_two)
 
-
         val selftwo: FragmentSelfTwo = FragmentSelfTwo()
         val selfthree: FragmentSelfThree = FragmentSelfThree()
 
