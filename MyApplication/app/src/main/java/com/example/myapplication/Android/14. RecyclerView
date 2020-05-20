@@ -1,0 +1,12 @@
+
+
+RecyclerView
+ - 장점
+    - ListView의 개선판
+        - ViewHolder 포함
+
+    - 유연하다는 장점이 있다
+        - LayoutManager 를 사용하면 아래 세가지의 리스트를 만들수있다.
+            - Linear
+            - Gride
+            - StaggeredGrid

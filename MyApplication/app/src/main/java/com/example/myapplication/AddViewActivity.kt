@@ -16,9 +16,7 @@ class AddViewActivity : AppCompatActivity() {
         val carList = ArrayList<CarForList>()
 
         for(i in 0 until 10){
-
             carList.add(CarForList("" + i + "번째 자동차", "" + i + "순위 엔진"))
-
         }
 
         val container = findViewById<LinearLayout>(R.id.addview_container)  // container 객체 가져옴
@@ -27,10 +25,11 @@ class AddViewActivity : AppCompatActivity() {
         // LayoutInflater 에서 제공하는 메소드 from() 이용
         val inflater = LayoutInflater.from(this@AddViewActivity)
 
+        // 붙여야 하는 만큼 for문을 돌려야함
         for(i in 0 until carList.size){
 
             // inflate() 로 item_view(SUB 페이지) 를 가져다가 inflate 진행, root는 어디가 붙이지는 않고 객체화해서 가지고만 있는다.
-            val itemView = inflater.inflate(R.layout.item_view, null)
+            val itemView = inflater.inflate(R.layout.item_view, null, false)
 
             var carNameView =  itemView.findViewById<TextView>(R.id.car_name)
             var carEngineView =  itemView.findViewById<TextView>(R.id.car_engine)
@@ -39,7 +38,6 @@ class AddViewActivity : AppCompatActivity() {
             carEngineView.setText(carList.get(i).engine)
 
             container.addView(itemView) // container에 attach를 진행
-
 
             /*inflater.inflate(int resource, ViewGroup root, boolean attachToRoot);
 

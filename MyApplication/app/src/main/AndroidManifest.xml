@@ -11,13 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/MyTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".AddViewActivity">
+        <activity android:name=".RecycclerViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".PhoneBookDetailActivity" />
+        <activity android:name=".PhoneBookSelfActivity" />
+        <activity android:name=".PhoneBookActivity" />
+        <activity android:name=".AddViewActivity" />
         <activity android:name=".Context" />
         <activity android:name=".Resource" />
         <activity android:name=".NullSafety" />
