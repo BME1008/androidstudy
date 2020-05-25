@@ -25,6 +25,7 @@ class ListViewActivity : AppCompatActivity() {
 
         val adapter = ListViewAdapter(carList, LayoutInflater.from(this@ListViewActivity))
         listView.adapter = adapter  // listView는 activity_list_view.xml의 id 값
+
         listView.setOnItemClickListener { parent, view, position, id ->
             var carName = (adapter.getItem(position) as CarForList).name
             var carEngine = (adapter.getItem(position) as CarForList).engine

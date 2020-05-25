@@ -12,5 +12,7 @@ class Context : AppCompatActivity() {
         val context: Context = this
         val applicationContext = getApplicationContext()
 
+
+
     }
 }

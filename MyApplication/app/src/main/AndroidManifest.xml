@@ -11,13 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/MyTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".RecycclerViewActivity">
+        <activity android:name=".SelfStudyRecyclerView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PhoneBookRecyclerVeiwActivity" />
+        <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".PhoneBookDetailActivity" />
         <activity android:name=".PhoneBookSelfActivity" />
